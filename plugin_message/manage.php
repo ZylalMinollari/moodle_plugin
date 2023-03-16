@@ -27,7 +27,6 @@ global $DB;
 require_login();
 
 $PAGE->set_url(new moodle_url('/local/plugin_message/manage.php'));
-$PAGE->set_context(\context_system::instance());
 
 $messages = $DB->get_records('local_plugin_message', null, 'id');
 
